@@ -1,65 +1,11 @@
 
-<!DOCTYPE html>
-<html lang="km">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KHMER STORY DUB STUDIO</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 24px;
-      background: #071426;
-      color: white;
-      font-family: Arial, sans-serif;
-      text-align: center;
-    }
-    .studio {
-      max-width: 600px;
-      margin: 40px auto;
-      padding: 24px;
-      border: 1px solid #19d9ff;
-      border-radius: 20px;
-      background: #10243c;
-    }
-    h1 { color: #19d9ff; }
-    p { line-height: 1.8; }
-    input, button {
-      box-sizing: border-box;
-      width: 100%;
-      margin-top: 14px;
-      padding: 14px;
-      border-radius: 10px;
-      font-size: 16px;
-    }
-    button {
-      background: #00cfff;
-      border: 0;
-      font-weight: bold;
-    }
-    video { width: 100%; margin-top: 20px; }
-  </style>
-</head>
-<body>
-  <div class="studio">
-    <h1>KHMER STORY DUB STUDIO</h1>
-    <p>ស្ទូឌីយោបកប្រែរឿង និងសាកល្បងសំឡេងជាភាសាខ្មែរ</p>
-    <input type="file" id="videoFile" accept="video/*">
-    <video id="video" controls hidden></video>
-    <p id="status">សូមជ្រើសរើសវីដេអូដើម្បីសាកល្បង</p>
-  </div>
-  <script>
-    const fileInput = document.getElementById('videoFile');
-    const video = document.getElementById('video');
-    const status = document.getElementById('status');
-
-    fileInput.addEventListener('change', () => {
-      const file = fileInput.files[0];
-      if (!file) return;
-      video.src = URL.createObjectURL(file);
-      video.hidden = false;
-      status.textContent = 'វីដេអូត្រៀមសម្រាប់សាកល្បងហើយ!';
-    });
-  </script>
-</body>
-</html>
+<div style="margin:20px 0;padding:18px;border-radius:12px;background:#102238;color:white;text-align:center;">
+  <h2>🎙️ បង្កើតសំឡេងខ្មែរ</h2>
+  <p>បង្កើតសំឡេងសម្រាប់រឿងរបស់អ្នក</p>
+  <a href="https://huggingface.co/spaces/sarunvisoth/khmer-tts-demo"
+     target="_blank"
+     rel="noopener noreferrer"
+     style="display:inline-block;padding:12px 20px;background:#06b6d4;color:#00111a;border-radius:8px;text-decoration:none;font-weight:bold;">
+    ចុចទីនេះដើម្បីបង្កើតសំឡេង
+  </a>
+</div>
