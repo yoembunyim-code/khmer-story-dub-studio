@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+python-multipart
+faster-whisper
+transformers
+torch
+sentencepiece
+scipy
+numpy
+edge-tts      # OPTIONAL online voices (sends text to Microsoft)
+# demucs      # OPTIONAL music/voice separation (large download): pip install demucs
